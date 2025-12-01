@@ -1,0 +1,788 @@
+/* 全局样式重置和基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* 容器布局样式 */
+.chat-container {
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    max-height: 600px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 用户身份设置界面样式 */
+.user-setup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.user-setup h2 {
+    font-size: 2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.setup-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.setup-form input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.setup-form input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.setup-form button {
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: #667eea;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.setup-form button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* 聊天主界面样式 */
+.chat-main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 聊天头部样式 */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #667eea;
+    color: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.chat-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-info span {
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.user-info button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #667eea;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.user-info button {
+    transition: all 0.3s ease;
+}
+
+.user-info button:hover {
+    background: #f7fafc;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 在线人数显示样式 */
+.online-count {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.online-count:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 聊天消息区域样式 */
+.chat-messages {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background: #f7fafc;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* 滚动条样式 */
+.chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+    background: #edf2f7;
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* 消息样式 */
+.message {
+    display: flex;
+    max-width: 70%;
+    animation: messageSlide 0.3s ease-out;
+}
+
+@keyframes messageSlide {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message.own {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.message-content {
+    background: white;
+    padding: 0.8rem 1rem;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.message.own .message-content {
+    background: #667eea;
+    color: white;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.message.own .message-header {
+    flex-direction: row-reverse;
+}
+
+.message-sender {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.message.own .message-sender {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.message-time {
+    color: #718096;
+    margin-left: 0.5rem;
+}
+
+.message.own .message-time {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+.message-text {
+    word-wrap: break-word;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+/* 消息悬停效果 */
+.message:not(.system):not(.recall) .message-content {
+    transition: all 0.3s ease;
+}
+
+.message:not(.system):not(.recall):hover .message-content {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 文件消息悬停效果 */
+.message-file {
+    transition: all 0.3s ease;
+}
+
+/* 聊天输入区域样式 */
+.chat-input-area {
+    padding: 1rem 1.5rem;
+    background: white;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* 功能按钮样式 */
+.input-tools {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tool-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #f7fafc;
+    color: #4a5568;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-btn:hover {
+    background: #edf2f7;
+    transform: scale(1.1);
+    color: #667eea;
+}
+
+/* 输入容器样式 */
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 0.5rem; /* 整体往下移动一些 */
+}
+
+.message-input {
+    flex: 1;
+    padding: calc(1rem - 6px) 1rem calc(1rem + 6px);
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    resize: none;
+    min-height: 45px;
+    max-height: 45px; /* 固定高度，不允许换行 */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    outline: none;
+    background: white;
+    color: #4a5568;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    white-space: nowrap; /* 不换行 */
+    word-wrap: normal; /* 不允许单词换行 */
+    box-sizing: border-box; /* 确保内边距不影响总高度 */
+}
+
+/* 确保输入框内的文本默认样式正确 */
+.message-input * {
+    color: inherit;
+    background: transparent;
+}
+
+/* 确保输入框内的文本节点样式正确 */
+.message-input textarea, .message-input div {
+    color: #4a5568;
+    background: white;
+}
+
+/* 确保输入框内的纯文本样式正确 */
+.message-input::before {
+    color: #a0aec0;
+    background: transparent;
+}
+
+/* 确保输入框内的span元素默认样式正确 */
+.message-input span {
+    color: inherit;
+    background: transparent;
+}
+
+.message-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* 占位符样式 */
+.message-input:empty:before {
+    content: attr(placeholder);
+    color: #a0aec0;
+    pointer-events: none;
+}
+
+/* 输入框中艾特文本的样式 */
+.message-input .mention-highlight {
+    color: #667eea;
+    font-weight: 600;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+#sendBtn {
+    padding: 0 1.5rem; /* 移除上下内边距，使用固定高度 */
+    height: 45px; /* 与输入框等高 */
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: #667eea;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sendBtn:hover {
+    background: #5a67d8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+#sendBtn:active {
+    transform: translateY(0);
+}
+
+/* 媒体查询 - 响应式设计 */
+@media (max-width: 768px) {
+    .chat-container {
+        height: 100vh;
+        max-height: none;
+        border-radius: 0;
+    }
+
+    .chat-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .chat-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .chat-messages {
+        padding: 1rem;
+    }
+
+    .message {
+        max-width: 85%;
+    }
+
+    .chat-input-area {
+        padding: 1rem;
+    }
+
+    .input-tools {
+        justify-content: center;
+    }
+}
+
+/* 系统提示信息样式 */
+.message.system,
+.message.recall {
+    align-self: center;
+    max-width: 100%;
+    margin: 0;
+}
+
+.message.system .message-content,
+.message.recall .message-content {
+    background: transparent;
+    box-shadow: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    color: #718096;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.system-username,
+.recall-username {
+    color: #667eea;
+    font-weight: 600;
+    margin: 0 0.2rem;
+}
+
+/* 消息操作按钮样式 */
+.message-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.3rem;
+}
+
+.recall-btn {
+    background: transparent;
+    border: none;
+    color: #718096;
+    font-size: 0.75rem;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.recall-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #e53e3e;
+}
+
+.message.own .recall-btn {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.message.own .recall-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fed7d7;
+}
+
+/* 文件消息样式 */
+.message-file {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.message.own .message-file {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.file-icon {
+    font-size: 1.5rem;
+}
+
+.file-info {
+    flex: 1;
+    overflow: hidden;
+}
+
+.file-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-size {
+    font-size: 0.8rem;
+    color: #718096;
+}
+
+.message.own .file-size {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.download-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+    color: #667eea;
+    background: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.message.own .download-btn {
+    color: #667eea;
+    background: white;
+}
+
+.download-btn:hover {
+    background: #f7fafc;
+}
+
+/* 艾特消息样式 */
+.message.mentioned .message-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.message.mentioned .message-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+    border-radius: 18px;
+}
+
+.message.mentioned.visible .message-content::before {
+    opacity: 1;
+}
+
+
+
+/* @用户名高亮样式 */
+.mention-highlight {
+    color: #667eea;
+    font-weight: 600;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+/* 修复自己发送的消息中艾特文本颜色问题 */
+.message.own .mention-highlight {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 调整艾特消息的淡蓝色显示效果，应用于消息容器左侧，模拟聊天室导航栏指示 */
+.message.mentioned {
+    position: relative;
+    margin-left: 24px;
+}
+
+.message.mentioned::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 4px;
+    height: 100%;
+    background: rgba(102, 126, 234, 0.8);
+    opacity: 1;
+    z-index: 1;
+    border-radius: 0;
+}
+
+/* 统一输入框与页面中艾特消息的样式 */
+#messageInput {
+    /* 确保输入框支持富文本样式 */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* 输入框中艾特文本的样式 */
+#messageInput::selection {
+    background: rgba(102, 126, 234, 0.3);
+}
+
+/* 输入框中艾特文本的样式 */
+#messageInput::-moz-selection {
+    background: rgba(102, 126, 234, 0.3);
+}
+
+/* 连接状态显示 */
+.connection-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.connection-status:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 网络延迟显示 */
+.latency-info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    color: #4a5568;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 0.25rem;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.status-indicator.online {
+    background-color: #48bb78;
+    box-shadow: 0 0 10px rgba(72, 187, 120, 0.5);
+}
+
+.status-indicator.offline {
+    background-color: #f56565;
+    box-shadow: 0 0 10px rgba(245, 101, 101, 0.5);
+}
+
+.status-text {
+    color: white;
+    font-size: 0.85rem;
+}
+
+/* Emoji反应样式 */
+.reactions-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.message.own .reactions-container {
+    justify-content: flex-end;
+}
+
+.message:not(.own) .reactions-container {
+    justify-content: flex-start;
+}
+
+.reaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: normal;
+}
+
+.reaction-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 用户自己添加的反应样式 */
+.reaction-btn.user-reacted {
+    border-color: #90cdf4;
+    background-color: #ebf8ff;
+}
+
+/* 消息内容为蓝色时的反应按钮样式 */
+.message.own .reaction-btn {
+    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.message.own .reaction-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 自己添加的反应样式 */
+.message.own .reaction-btn.user-reacted {
+    border-color: #ffd43b;
+    background-color: rgba(255, 212, 59, 0.2);
+}
+
+.reaction-emoji {
+    font-size: 1rem;
+    margin-left: -2px;
+    margin-top: -2px;
+    display: inline-block;
+}
+
+.reaction-count {
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-left: -2px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid聊天应用</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- 用户身份设置 -->
+        <div class="user-setup" id="userSetup">
+            <h2>欢迎使用聊天应用</h2>
+            <div class="setup-form">
+                <input type="text" id="userIdInput" placeholder="请输入您的用户ID" required>
+                <button id="enterChatBtn">进入聊天室</button>
+            </div>
+        </div>
+
+        <!-- 聊天主界面 -->
+        <div class="chat-main" id="chatMain" style="display: none;">
+            <!-- 聊天头部 -->
+            <header class="chat-header">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <h1>聊天室</h1>
+                    <!-- 在线人数显示 -->
+                    <div class="online-count" id="onlineCount">
+                        0人在线
+                    </div>
+                    <!-- 连接状态显示 -->
+                    <div class="connection-status" id="connectionStatus">
+                        <span class="status-indicator offline"></span>
+                        <span class="status-text">未连接</span>
+                    </div>
+                </div>
+                <div class="user-info">
+                <button id="exitChatBtn">退出</button>
+            </div>
+            </header>
+
+            <!-- 聊天记录区域 -->
+            <main class="chat-messages" id="chatMessages">
+                <!-- 聊天消息将动态添加到这里 -->
+            </main>
+
+            <!-- 聊天输入区域 -->
+            <footer class="chat-input-area">
+                <!-- 功能按钮 -->
+                <div class="input-tools">
+                    <button class="tool-btn" id="fileBtn" title="发送文件">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- 消息输入框 -->
+                <div class="input-container">
+                    <div id="messageInput" class="message-input" contenteditable="true" placeholder="输入消息..." autocomplete="off"></div>
+                    <button id="sendBtn">发送</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="js/websocketManager.js"></script>
+    <script src="js/messageManager.js"></script>
+    <script src="js/uiManager.js"></script>
+    <script src="js/mentionManager.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

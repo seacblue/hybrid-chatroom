@@ -1,0 +1,623 @@
+[
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:45.901Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:39:49.874Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:39:49.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:49.908Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:49.910Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:39:53.879Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:39:53.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:53.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:53.898Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:39:57.873Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:39:57.875Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:57.880Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:39:57.909Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:00.875Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:40:00.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:01.104Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:40:01.136Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:04.879Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:04.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:40:04.889Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:40:04.904Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:08.872Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:08.873Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:40:08.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:40:08.900Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:11.276Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:40:11.750Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:43.161Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:45.762Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:46.295Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:46.313Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:48.874Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:48.887Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:49.300Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:49.305Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:51.883Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:51.888Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:52.876Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:52.883Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:55.880Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:55.891Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:56.869Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:56.877Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:41:59.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:41:59.886Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:00.879Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:00.889Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:03.877Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:03.883Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:03.886Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:03.906Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:07.875Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:07.877Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:07.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:07.898Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:11.882Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:11.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:11.888Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:11.918Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:15.871Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:15.875Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:15.876Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:15.904Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:19.882Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:19.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:19.892Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:19.912Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:23.878Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:23.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:23.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:23.911Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:27.873Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:27.876Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:27.883Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:27.909Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:31.876Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:31.878Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:31.882Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:31.897Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:35.880Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:35.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:35.885Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:35.913Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:39.881Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:39.883Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:39.889Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:39.914Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:42.889Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:42.900Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:43.116Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:43.743Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:43.761Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:42:44.023Z"
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:45.618Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 加入了聊天室",
+    "timestamp": "2025-12-01T09:42:47.587Z"
+  },
+  {
+    "type": "text",
+    "sender": "A",
+    "content": "@B 你好呀！",
+    "mentionedUsers": [
+      "B"
+    ],
+    "timestamp": "2025-12-01T09:42:57.136Z"
+  },
+  {
+    "type": "text",
+    "sender": "B",
+    "content": "你好！",
+    "mentionedUsers": [],
+    "timestamp": "2025-12-01T09:43:02.380Z"
+  },
+  {
+    "type": "text",
+    "sender": "B",
+    "content": "欢迎来到聊天室，@A",
+    "mentionedUsers": [
+      "A"
+    ],
+    "timestamp": "2025-12-01T09:43:08.392Z",
+    "reactions": [
+      {
+        "emoji": "❤️",
+        "users": [
+          "A"
+        ]
+      },
+      {
+        "emoji": "👍",
+        "users": [
+          "B"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "system",
+    "sender": "A",
+    "content": "A 退出了聊天室",
+    "timestamp": "2025-12-01T09:43:31.289Z"
+  },
+  {
+    "type": "system",
+    "sender": "B",
+    "content": "B 退出了聊天室",
+    "timestamp": "2025-12-01T09:43:32.116Z"
+  }
+]

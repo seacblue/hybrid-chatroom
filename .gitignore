@@ -1,0 +1,41 @@
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# IDE配置文件
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Android项目
+app/build/
+app/.gradle/
+app/local.properties
+app/*.iml
+
+# Node.js项目
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.*.local
+backend/logs/
+
+# 构建输出
+*.apk
+*.aar
+*.jar
+*.class
+
+# 缓存文件
+.cache/
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# 演示图片
+demo1.png
+demo2.png

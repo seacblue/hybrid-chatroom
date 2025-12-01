@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.chatapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.chatapp"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+// 自动启动后端服务器的Gradle任务
+task startBackendServer(type: Exec) {
+    // 切换到后端目录
+    workingDir '../backend'
+    
+    // 根据操作系统选择命令
+    if (org.gradle.internal.os.OperatingSystem.current().isWindows()) {
+        // Windows系统
+        commandLine 'cmd', '/c', 'start', 'node', 'server.js'
+    } else {
+        // macOS/Linux系统
+        commandLine 'sh', '-c', 'node server.js &'
+    }
+    
+    // 在后台运行
+    standardOutput = new ByteArrayOutputStream()
+    errorOutput = new ByteArrayOutputStream()
+    ignoreExitValue = true
+}
+
+// 在构建前启动后端服务器
+preBuild.dependsOn startBackendServer
